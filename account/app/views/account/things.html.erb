@@ -1,0 +1,12 @@
+<h1>Account#things</h1>
+<p>Find me in app/views/account/things.html.erb</p>
+
+<% @things.each do |thing| %>
+  <%= thing.name %>
+  <%= thing.price %>
+  <%= thing.amount %>
+  <%= thing.category %>
+<% end %>
+
+<input type="button" onclick="location.href='http://localhost:3000/account/charts'"value="戻る">
+
