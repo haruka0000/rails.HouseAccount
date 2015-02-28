@@ -1,9 +1,9 @@
 class AccountController < ApplicationController
-  def things
-     @things = Thing.all
+  before_action :sign_in_required
+  def home
   end
 
-  def charts
-
+  def things
+    @things = Thing.all
   end
 end

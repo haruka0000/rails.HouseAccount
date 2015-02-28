@@ -1,4 +1,5 @@
 Devise::Application.routes.draw do
+  get "account/home"
   get "account/things"
   get "account/charts"
   get "things/charts"
